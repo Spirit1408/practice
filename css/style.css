@@ -79,7 +79,6 @@ body {
     line-height: 1.5;
     background: #bbf330;
     border-radius: 30px;
-    padding: 6px 17px;
     border: none;
     min-width: 98px;
     height: 32px;
@@ -167,6 +166,10 @@ body {
     margin-bottom: 32px;
 }
 
+.benefits-item {
+    width: calc((100% - 67px) / 2);
+}
+
 .benefits-item-image {
     margin-bottom: 8px;
 }
@@ -185,7 +188,6 @@ body {
 .benefits-btn {
     border: 2px solid #7eb101;
     border-radius: 30px;
-    padding: 10px 20px;
     min-width: 106px;
     height: 40px;
     font-family: "Roboto", sans-serif;
@@ -210,24 +212,25 @@ body {
     padding: 120px 0 101px;
 }
 
-.menu-head {
-    text-align: center;
-}
-
 .menu-title {
     font-size: 42px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .menu-text {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .menu-list {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    justify-content: center;
+    align-items: center;
 }
+
 .menu-item {
     width: calc((100% - 32px * 2) / 3);
 }
@@ -274,7 +277,7 @@ body {
     margin-bottom: 40px;
 }
 
-.content-item-reviewer {
+.contact-item-reviewer {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -297,12 +300,11 @@ body {
     line-height: 1.5;
 }
 
-.content-item-reviewer::after {
+.contact-item-reviewer::after {
     content: "";
     border: 1px solid #7eb101;
-    width: 52px;
-    height: 0px;
-    transform: rotate(-90deg);
+    width: 0px;
+    height: 52px;
 }
 
 /*---Contact section---*/
