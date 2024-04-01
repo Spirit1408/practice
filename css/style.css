@@ -1,0 +1,308 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #2c2c2c;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1280px;
+    padding: 0 16px;
+}
+
+/*---Header---*/
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.nav {
+    margin-right: 30px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-link {
+    display: block;
+    padding: 28px 0;
+    font-size: 14px;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: #bbf330;
+}
+
+.header-btn,
+.hero-btn {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    background: #bbf330;
+    border-radius: 30px;
+    padding: 6px 17px;
+    border: none;
+    min-width: 98px;
+    height: 32px;
+}
+
+.header-btn:hover,
+.header-btn:focus,
+.header-btn:active {
+    background: #ffe450;
+}
+
+/*---Header---*/
+
+/*---Hero section---*/
+
+.hero {
+    padding: 14px 0 69px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 143px;
+}
+
+.hero-content {
+    max-width: 511px;
+}
+
+.hero-title {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 29px;
+}
+
+.hero-text {
+    line-height: 1.5;
+    margin-bottom: 39px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background: #ffe450;
+}
+
+.hero-image {
+    border: 26px solid #ffe550;
+    border-radius: 100%;
+}
+
+/*---Hero section---*/
+
+/*---Benefits section---*/
+
+.benefits {
+    padding: 113px 0 124px;
+    background: #ffe550;
+}
+
+.benefits-container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.benefits-content {
+    max-width: 573px;
+}
+
+.benefits-title {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.benefits-text {
+    line-height: 1.5;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.benefits-list {
+    display: flex;
+    gap: 67px;
+    margin-bottom: 32px;
+}
+
+.benefits-item-image {
+    margin-bottom: 8px;
+}
+
+.benefits-item-title {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.benefits-item-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.benefits-btn {
+    border: 2px solid #7eb101;
+    border-radius: 30px;
+    padding: 10px 20px;
+    min-width: 106px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits-btn:hover {
+    border: none;
+    background: #bbf330;
+}
+
+/*---Benefits section---*/
+
+/*---Menu section---*/
+
+.menu {
+    padding: 120px 0 101px;
+}
+
+.menu-head {
+    text-align: center;
+}
+
+.menu-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.menu-text {
+    margin-bottom: 40px;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.menu-item {
+    width: calc((100% - 32px * 2) / 3);
+}
+
+/*---Menu section---*/
+
+/*---Contact section---*/
+
+.contact {
+    padding: 140px 16px 126px;
+    background: #ffe550;
+}
+
+.contact-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.contact-text {
+    margin-bottom: 33px;
+}
+
+.contact-list {
+    display: flex;
+    gap: 139px;
+}
+
+.contact-item {
+    padding: 14px;
+    background: #fff;
+    border-radius: 0 25px 25px 25px;
+}
+
+.contact-item-rank {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 29px;
+}
+
+.contact-item-review {
+    font-weight: 700;
+    font-size: 18px;
+    max-width: 473px;
+    margin-bottom: 40px;
+}
+
+.content-item-reviewer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-reviewer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.contact-item-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contact-item-desc {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.content-item-reviewer::after {
+    content: "";
+    border: 1px solid #7eb101;
+    width: 52px;
+    height: 0px;
+    transform: rotate(-90deg);
+}
+
+/*---Contact section---*/
