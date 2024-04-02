@@ -42,6 +42,10 @@ body {
 
 /*---Header---*/
 
+.header {
+    box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -308,3 +312,184 @@ body {
 }
 
 /*---Contact section---*/
+
+/*---Subscribe section---*/
+
+.subscribe {
+    padding: 176px 0 201px;
+}
+.subscribe-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+}
+
+.subscribe-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.subscribe-text {
+    line-height: 1.5;
+    max-width: 448px;
+    margin-bottom: 24px;
+}
+
+.subscribe-form-input {
+    border: 0.85px solid #ffe550;
+    border-radius: 30px;
+    padding: 10px;
+    width: 395px;
+    height: 42px;
+    margin-right: 32px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #505050;
+    outline: none;
+}
+
+.subscribe-form-btn {
+    border-radius: 30px;
+    padding: 10px 20px;
+    min-width: 103px;
+    height: 42px;
+    background: #bbf330;
+    border: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.subscribe-form-btn:hover,
+.subscribe-form-btn:focus,
+.subscribe-form-btn:active {
+    background: #ffe450;
+}
+
+/*---Subscribe section---*/
+
+/*---Footer---*/
+
+.footer {
+    box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
+    padding: 100px 0 100px;
+    background-image: url("../images/fruits-bkg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 90%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.footer-logo {
+    margin-right: 143px;
+}
+
+.footer-list {
+    display: flex;
+    flex-grow: 1;
+    gap: 28px;
+    align-items: flex-start;
+}
+
+.footer-item-link {
+    padding: 18px 0;
+    font-size: 14px;
+    display: block;
+}
+
+.footer-item-link:hover,
+.footer-item-link:focus,
+.footer-item-link:active {
+    color: #bbf330;
+}
+
+.footer-subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-form-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-form {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+.footer-form-input {
+    border: 0.85px solid #ffe550;
+    border-radius: 30px;
+    padding: 12px;
+    width: 279px;
+    height: 42px;
+    outline: none;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #505050;
+}
+
+.footer-form-btn {
+    border: 0.85px solid #7eb101;
+    border-radius: 30px;
+    padding: 10px 20px;
+    min-width: 103px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:active,
+.footer-form-btn:focus {
+    border: 2px solid #ffe450;
+}
+
+.footer-form-policy {
+    font-size: 12px;
+}
+
+.form-policy-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #7eb101;
+}
+
+.footer-policy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-policy-list {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-policy-item .footer-policy-link {
+    font-size: 12px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #7eb101;
+}
+
+.footer-copyright {
+    font-size: 12px;
+}
+
+/*---Footer---*/
