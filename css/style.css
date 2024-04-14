@@ -34,6 +34,10 @@ body {
     color: #2c2c2c;
 }
 
+:root {
+    --transition-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container {
     margin: 0 auto;
     width: 1280px;
@@ -68,6 +72,7 @@ body {
     display: block;
     padding: 28px 0;
     font-size: 14px;
+    transition: color var(--transition-func);
 }
 
 .nav-link:hover,
@@ -86,6 +91,7 @@ body {
     border: none;
     min-width: 98px;
     height: 32px;
+    transition: background var(--transition-func);
 }
 
 .header-btn:hover,
@@ -201,6 +207,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background var(--transition-func);
 }
 
 .benefits-btn:hover {
@@ -359,6 +366,7 @@ body {
     font-weight: 500;
     font-size: 13px;
     line-height: 1.5;
+    transition: background var(--transition-func);
 }
 
 .subscribe-form-btn:hover,
@@ -405,6 +413,7 @@ body {
     padding: 18px 0;
     font-size: 14px;
     display: block;
+    transition: color var(--transition-func);
 }
 
 .footer-item-link:hover,
@@ -443,7 +452,7 @@ body {
 }
 
 .footer-form-btn {
-    border: 0.85px solid #7eb101;
+    border: 1px solid #7eb101;
     border-radius: 30px;
     padding: 10px 20px;
     min-width: 103px;
@@ -452,12 +461,13 @@ body {
     justify-content: center;
     align-items: center;
     background: #fff;
+    transition: border-color var(--transition-func);
 }
 
 .footer-form-btn:hover,
 .footer-form-btn:active,
 .footer-form-btn:focus {
-    border: 2px solid #ffe450;
+    border-color: #ffe450;
 }
 
 .footer-form-policy {
@@ -468,6 +478,11 @@ body {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #7eb101;
+    transition: color var(--transition-func);
+}
+
+.form-policy-link:hover {
+    color: #ffe450;
 }
 
 .footer-policy {
@@ -486,6 +501,11 @@ body {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #7eb101;
+    transition: color var(--transition-func);
+}
+
+.footer-policy-link:hover {
+    color: #ffe450;
 }
 
 .footer-copyright {
@@ -493,3 +513,139 @@ body {
 }
 
 /*---Footer---*/
+
+/*---Backdrop---*/
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(94, 99, 99, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: var(--transition-func);
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: inherit;
+}
+
+.modal {
+    border-radius: 30px;
+    width: 458px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    background: #ffe550;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 32px;
+}
+
+.module-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    width: 32px;
+    height: 32px;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+    transition: background-color var(--transition-func);
+}
+
+.module-close-btn:hover,
+.module-close-btn:focus {
+    background-color: #7eb101;
+}
+
+.module-close-icon {
+    height: 12px;
+    width: 12px;
+    transition: fill var(--transition-func);
+}
+
+.module-close-btn:hover > .module-close-icon,
+.module-close-btn:focus > .module-close-icon {
+    fill: #fff;
+}
+
+.modal-form-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #2c2c2c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #2c2c2c;
+    margin-bottom: 2px;
+    padding-left: 12px;
+}
+
+.form-input {
+    width: 100%;
+    border: 1px solid rgba(18, 18, 18, 0.12);
+    border-radius: 30px;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+    padding: 14px 12px;
+    margin-bottom: 24px;
+    transition: border var(--transition-func);
+}
+
+.form-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #c4c4c4;
+}
+
+.form-input:nth-child(6) {
+    margin-bottom: 32px;
+}
+
+.form-input:hover,
+.form-input:active,
+.form-input:focus {
+    border: 1px solid #7eb101;
+    outline: transparent;
+}
+
+.form-btn {
+    display: block;
+    border: 2px solid #7eb101;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #2c2c2c;
+    min-width: 106px;
+    margin: 0 auto;
+    transition: background var(--transition-func);;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+    background: #bbf330;
+}
+
+/*---Backdrop---*/

@@ -25,6 +25,10 @@
         <link
             rel="stylesheet"
             href="./css/style.css" />
+
+        <script
+            src="./js/index.js"
+            defer></script>
     </head>
     <body>
         <header class="header">
@@ -93,6 +97,7 @@
 
                 <button
                     class="header-btn"
+                    id="modal-btn"
                     type="button">
                     Order Now
                 </button>
@@ -454,69 +459,170 @@
         <footer class="footer">
             <div class="footer-container container">
                 <div class="footer-content">
-                    <img class="footer-logo"
+                    <img
+                        class="footer-logo"
                         src="./images/logo.png"
                         width="66"
                         height="52"
                         alt="" />
-        
+
                     <ul class="footer-list">
                         <li class="footer-item">
-                            <a class="footer-item-link" href="">Home</a>
+                            <a
+                                class="footer-item-link"
+                                href=""
+                                >Home</a
+                            >
                         </li>
-        
+
                         <li class="footer-item">
-                            <a class="footer-item-link" href="">About</a>
+                            <a
+                                class="footer-item-link"
+                                href=""
+                                >About</a
+                            >
                         </li>
-        
+
                         <li class="footer-item">
-                            <a class="footer-item-link" href="">Service</a>
+                            <a
+                                class="footer-item-link"
+                                href=""
+                                >Service</a
+                            >
                         </li>
-        
+
                         <li class="footer-item">
-                            <a class="footer-item-link" href="">Menu</a>
+                            <a
+                                class="footer-item-link"
+                                href=""
+                                >Menu</a
+                            >
                         </li>
-        
+
                         <li class="footer-item">
-                            <a class="footer-item-link" href="">Contact</a>
+                            <a
+                                class="footer-item-link"
+                                href=""
+                                >Contact</a
+                            >
                         </li>
                     </ul>
-        
+
                     <div class="footer-subscribe-form">
                         <strong class="footer-form-title">Subscribe</strong>
-            
+
                         <form class="footer-form">
-                            <input class="footer-form-input"
+                            <input
+                                class="footer-form-input"
                                 type="email"
                                 placeholder="Enter your email" />
-                            <button class="footer-form-btn" type="submit">Subscribe</button>
+
+                            <button
+                                class="footer-form-btn"
+                                type="submit">
+                                Subscribe
+                            </button>
                         </form>
-            
+
                         <p class="footer-form-policy">
                             By subscribing you agree to with our
-                            <a class="form-policy-link" href="">Privacy Policy</a>
+                            <a
+                                class="form-policy-link"
+                                href=""
+                                >Privacy Policy</a
+                            >
                         </p>
                     </div>
                 </div>
-    
+
                 <div class="footer-policy">
                     <ul class="footer-policy-list">
                         <li class="footer-policy-item">
-                            <a class="footer-policy-link" href="#">Privacy Policy</a>
+                            <a
+                                class="footer-policy-link"
+                                href="#"
+                                >Privacy Policy</a
+                            >
                         </li>
-        
+
                         <li class="footer-policy-item">
-                            <a class="footer-policy-link" href="#">Terms of Service</a>
+                            <a
+                                class="footer-policy-link"
+                                href="#"
+                                >Terms of Service</a
+                            >
                         </li>
-        
+
                         <li class="footer-policy-item">
-                            <a class="footer-policy-link" href="#">Cookies Settings</a>
+                            <a
+                                class="footer-policy-link"
+                                href="#"
+                                >Cookies Settings</a
+                            >
                         </li>
                     </ul>
-        
-                    <p class="footer-copyright">2022 FoodSta. All right reserved.</p>
+
+                    <p class="footer-copyright">
+                        2022 FoodSta. All right reserved.
+                    </p>
                 </div>
             </div>
         </footer>
+
+        <div class="backdrop" id="modal-window">
+            <div class="modal">
+                <button
+                    type="button"
+                    id="modal-close-btn"
+                    class="module-close-btn">
+                    <svg class="module-close-icon">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <p class="modal-form-title">Order Form</p>
+
+                <form class="modal-form">
+                    <label
+                        class="form-label"
+                        for="name"
+                        >Name</label
+                    >
+                    <input
+                        type="text"
+                        id="name"
+                        class="form-input"
+                        placeholder="Your name" />
+
+                    <label
+                        class="form-label"
+                        for="phone"
+                        >Phone number</label
+                    >
+                    <input
+                        type="tel"
+                        id="phone"
+                        class="form-input"
+                        placeholder="+38(0_ _) _ _ _   _ _   _ _" />
+
+                    <label
+                        class="form-label"
+                        for="email"
+                        >E-mail</label
+                    >
+                    <input
+                        type="mail"
+                        id="email"
+                        class="form-input"
+                        placeholder="example@gmail.com" />
+
+                    <button
+                        type="submit"
+                        class="form-btn">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
